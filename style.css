@@ -17,10 +17,10 @@
 .reference {
   position: absolute;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.2;
   inset: 0;
-  left: 10px;
-  top: 175px;
+  /* left: 10px; */
+  /* top: 175px; */
 }
 
 a {
@@ -384,7 +384,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 200dvh;
+  height: 272dvh;
+  border: 1px solid red;
 }
 .tannerCollection > .title {
   position: relative;
@@ -442,8 +443,8 @@ section {
   width: 45%;
   transform: translateX(78px) translateY(-15px);
 }
-.firstItem::before{
-  content: '01';
+.firstItem::before {
+  content: "01";
   position: absolute;
   top: -4%;
   left: 10.6%;
@@ -451,8 +452,8 @@ section {
   font-weight: 600;
   font-size: 2.5em;
 }
-.firstItem::after{
-  content: '';
+.firstItem::after {
+  content: "";
   position: absolute;
   top: 2%;
   left: 15.6%;
@@ -464,16 +465,16 @@ section {
   font-size: 1.15em;
   letter-spacing: 5.4px;
 }
-.productdetail::before{
-  content: '';
+.productdetail::before {
+  content: "";
   position: absolute;
   width: 1.5px;
   height: 50px;
   background: #030303;
   transform: translateY(-55px) translateX(3px);
 }
-.productdetail::after{
-  content: '';
+.productdetail::after {
+  content: "";
   position: absolute;
   width: 1.5px;
   height: 100px;
@@ -499,53 +500,54 @@ section {
 .productNumber {
   position: absolute;
 }
-.firstItem>img{
+.firstItem > img {
   position: absolute;
   right: 26.5%;
   bottom: 29.7%;
   width: 100px;
 }
 
-.secondItem{
+.secondItem {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.secondItem::before{
-  content: '02';
+.secondItem::before {
+  content: "02";
   position: absolute;
   bottom: -15%;
-  left: 48%;
+  left: 46%;
   letter-spacing: 12px;
   font-weight: 700;
   font-size: 2.7em;
+  z-index: 10;
 }
-.secondItem>.images{
+.secondItem > .images {
   display: flex;
   gap: 20px;
   position: absolute;
-  right: 17.85%;
+  right: 17.1%;
   border: 20px solid white;
   transform: translateX(20px) translateY(-20px);
 }
-.secondItem>.images>img{
+.secondItem > .images > img {
   width: 195px;
 }
-.productData{
+.productData {
   position: absolute;
   padding: 0 5px;
-  left: 20%;
-  top: 50%;
+  left: 18%;
+  top: 37%;
 }
-.productData>h1{
+.productData > h1 {
   font-size: 1.3em;
   letter-spacing: 5.6px;
 }
-.productData>h1::before{
-  content: '';
+.productData > h1::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 22px;
@@ -553,57 +555,123 @@ section {
   transform: translateX(-24px) translateY(10px);
   z-index: -1;
 }
-.productData>p{
-  font-size: .7em;
+.productData > p {
+  font-size: 0.7em;
   padding-top: 15px;
   padding-left: 130px;
   line-height: 1.5em;
   margin-bottom: 15px;
 }
-.productData>a{
+.productData > a {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: .6em;
+  font-size: 0.6em;
   padding-left: 130px;
   line-height: 1.5em;
   color: var(--logoColor);
 }
-.productData>a>span{
-  font-size: .9em;
+.productData > a > span {
+  font-size: 0.9em;
   font-weight: bold;
 }
 
-.thirditem{
+.thirditem {
   position: relative;
-  border: 1px solid black;
   width: 100%;
   height: 310px;
 }
-.thirditem>.imagebox{
+.thirditem::before {
+  content: "03";
+  position: absolute;
+  right: 15%;
+  bottom: 20%;
+  letter-spacing: 12px;
+  font-weight: 700;
+  font-size: 2.7em;
+  z-index: 10;
+}
+.thirditem > .imagebox {
   display: flex;
   gap: 14px;
   position: absolute;
-  bottom: -15px;
-  left: 20%;
+  bottom: 5px;
+  left: 19.2%;
   border: 10px solid white;
-  z-index: -1;
+  z-index: 10;
 }
-.thirditem>.imagebox>img{
-  height: 280px;
+.thirditem > .imagebox > img {
+  height: 250px;
 }
-.productData2{
+.productData2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: 15.5%;
-  top: 15.5%;
+  right: 16.5%;
+  top: 18.5%;
 }
-.productData2>h1{
-  
+.productData2 > h1 {
   font-size: 1.3em;
-  /* letter-spacing: 5.6px; */
+  letter-spacing: 3.9px;
+  margin-right: 50px;
+  margin-bottom: 22px;
+}
+.productData2 > p {
+  font-size: 0.575em;
+  text-align: right;
+  line-height: 15px;
+  margin-bottom: 18px;
+}
+.productData2 > a {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 0.6em;
+  padding-left: 10px;
+  line-height: 1.5em;
+  color: var(--logoColor);
+  width: 100%;
+}
+.productData2 > a > span {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.fourthitem {
+  position: relative;
+  height: 190px;
+}
+.fourthitem > img {
+  position: absolute;
+  height: 265px;
+  right: 18%;
+  bottom: 0;
+  z-index: -1;
+}
+.fourthitem > p {
+  position: absolute;
+  left: 24%;
+  top: 23%;
+  color: var(--background);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
+  letter-spacing: 18px;
+  font-size: 2.4em;
+}
+.items {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  padding-left: 4.2%;
+  gap: 2.23%;
+  border: 1px solid black;
+}
+.items > .itemBox {
+  height: 60%;
+  aspect-ratio: 1/1;
+}
+.items > .itemBox > img {
+  width: 100%;
 }
 /* Tanner collections */
 
