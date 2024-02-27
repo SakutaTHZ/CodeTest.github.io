@@ -357,7 +357,7 @@ section {
   bottom: -60px;
   width: 10%;
   height: 70px;
-  background: var(--background);
+  /* background: var(--background); */
   z-index: 10;
 }
 .productSample1 .downArrow {
@@ -372,7 +372,7 @@ section {
   background: var(--fontColorB);
 }
 .productSample2 .downArrow {
-  background: #e7e5e5;
+  /* background: #e7e5e5; */
   left: 16.5%;
   transform: translateY(-5px);
 }
